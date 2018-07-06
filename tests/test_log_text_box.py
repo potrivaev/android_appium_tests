@@ -7,7 +7,6 @@ from config.options import desired_capabilities, options
 @pytest.fixture(scope="module")
 def driver():
     driver = webdriver.Remote(options["appium_url"], desired_capabilities)
-
     yield driver
     driver.quit()
 
