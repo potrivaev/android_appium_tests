@@ -13,11 +13,9 @@ To launch tests you need:
  To install Appium:
  
  ```bash
-  > curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+  > curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -    # get node.js
   > sudo apt-get install -y nodejs      # get node.js
   > npm install -g appium  # get appium
-  > npm install wd         # get appium client
-  > appium &               # start appium 
   ```
 
 To install Android SDK:
@@ -26,7 +24,17 @@ To install Android SDK:
 ```
 
 To launch test:
+1) Create and run emulator in Android SDK or connect real device
+2) Launch Appium:
 ```bash
- > pip install requirements.txt
+ > appium .
+```
+3) Check emulator/device is launched or connected:
+```bash
+ > adb devices
+```
+4) Follow these steps:
+```bash
+ > pip install -r requirements.txt
  > pytest tests/test_log_text_box.py
 ```

@@ -1,5 +1,16 @@
 # Created by .ignore support plugin (hsz.mobi)
 /node_modules/
 .idea/
-venv/include/
+venv/
 requirements.txt
+venv/bin/
+venv/lib/
+venv/lib64
+venv/pip-selfcheck.json
+venv/pyvenv.cfg
+venv/selenium/
+/tests/.pytest_cache/
+.pytest_cache/
+config/__pycache__/
+tests/.pytest_cache/
+tests/__pycache__/
