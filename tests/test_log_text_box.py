@@ -28,4 +28,4 @@ def test_text_appear_after_add_button_pressed(driver):
         add_button.click()
         text_view_texts.append(text_view.text)
     assert len(text_view_texts) == 3
-    assert text_view_texts[0] == "This is a test"
+    assert text_view_texts[0].replace("\n","") == "This is a test"
