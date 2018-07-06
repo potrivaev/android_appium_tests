@@ -13,7 +13,8 @@ To launch tests you need:
  To install Appium:
  
  ```bash
-  > brew install node      # get node.js
+  > curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+  > sudo apt-get install -y nodejs      # get node.js
   > npm install -g appium  # get appium
   > npm install wd         # get appium client
   > appium &               # start appium 
@@ -22,4 +23,10 @@ To launch tests you need:
 To install Android SDK:
 ```bash
  > sudo apt update && sudo apt install android-sdk
+```
+
+To launch test:
+```bash
+ > pip install requirements.txt
+ > pytest tests/test_log_text_box.py
 ```
